@@ -24,6 +24,6 @@ def contacts(request):
         desc = request.POST['desc']
         ins = models.Contacts(name=name, email=email, phone=phone, desc=desc)
         ins.save()
-        print("data is written successfully")
+      #  print("data is written successfully")
 
     return render(request, 'contacts.html')
